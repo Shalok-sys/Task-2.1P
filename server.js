@@ -13,7 +13,7 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 const mg = mailgun({ apiKey: 'db4b9608706fabfd3ac628452a346071-2b755df8-cc0d9f98', domain: 'sandboxb8787b514d1443f58809c424aed7f7ac.mailgun.org' });
 
 // Function to send a welcome email
-const sendWelcomeEmail = (email, firstName) => {
+const sendWelcomeEmail = (email) => {
     const data = {
         from: 'shalok4813.be23@chitkara.edu.in',
         to: email,
